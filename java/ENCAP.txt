@@ -1,0 +1,27 @@
+package encapsulation;
+
+public class Hospi {
+	private String treat="advance";
+	public String gettreat()
+	{
+		return treat;
+		
+	}
+	public void settreat(String treat)
+	{
+		this.treat=treat;
+	}
+}
+	class Cust
+	{
+		public static void main(String[]args)
+		{
+			Hospi h1=new Hospi();
+			String x=h1.gettreat();
+		System.out.println(x);
+		h1.settreat("normal");
+		System.out.println(h1); 
+		}
+	}
+
+
